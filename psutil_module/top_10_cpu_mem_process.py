@@ -69,7 +69,7 @@ def main():
             os.system('cls')
             print(process_cpu_table)
             print(process_mem_table)
-
+            time.sleep(1)
 
     except KeyboardInterrupt:
         print('Exiting!')
