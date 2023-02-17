@@ -34,4 +34,35 @@ pip install ipython==8.4.0
 
 # saving captures to File with wrpcap
 >>> wrpcap("filename.pcap", variable) # variable for example: offline_par
+
+>>> a.summary()
+>>> a[0].show()         # look for specific packet
+
+>>> pkt = IP(dst="192.x.x.x/y")/TCP(sport=RandShort(), dport=80, flags="S")
+>>> ans,unans = sr(pkt, timeout=10, retry=3, filter="port 80")
+>>> ans 
+>>> unans 
+>>> ans.show()
+>>> a.hexdump()
+>>> a.filter(lambda x: TCP in x)
+
+# ------
+# IP layer
+>>> a = IP()
+>>> ls(a)
+>>> a = IP(src="10.x.x.x", dst="10.x.x.x")
+>>> ls(a)
+>>> a
+>>> a.src 
+>>> a.dst 
+>>> a.ttl 
+
+# creating a TCP layer on top
+>>> a = IP(src="10.x.x.x", dst="10.x.x.x")/TCP()
+>>> ls(a)
+
+# Putting ethernet layer
+>>> d = Ether()
+>>> d
+
 ```
