@@ -1,0 +1,13 @@
+- Python Modules
+  - os 
+  - platform (system related info)
+  - psutil (process, cpu, mem info)
+  - wmi (for windows - helps in managing remote infrastructures, not all systems are configured with WMI)
+  - winapps (for windows)
+  - dnspython
+  - ipapi (IP lookups)
+  - ipaddress (validity of IP address)
+  - request (autonomous system lookups)
+  - socket (hostname lookups)
+  - webbrowser (for google maps)
+  - scapy (for network packet capturing and analysis)
